@@ -2,7 +2,7 @@
 # f represents the problem to solve
 
 def EulerExplicite(t, y, h, f, params):
-    return y + h * f(t, y, *params)
+    # TODO: implement the forward euler method
 
 
 def RungeKutta4(t, y, h, f, params):
