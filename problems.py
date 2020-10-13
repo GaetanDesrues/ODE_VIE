@@ -1,5 +1,23 @@
 import numpy as np
 
+#
+# A problem is defined as the right side of the ODE written in the normal form
+#
+# Signature:
+# def problem(t, y, *params):
+#     return f(t, y(t), params)
+#
+# Example: let's consider the ODE y'(t) = Ay^2 + Bt
+# Then the associated problem is
+# def myODE(t, y, A, B):
+#     return A*y**2 + B*t
+# and called in the main program as
+# A, B = np.pi, -52.2
+# params = [A, B]
+# myODE(t, y, *params)
+#
+
+
 
 def Exponential(t, y, k):
     """

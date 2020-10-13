@@ -1,3 +1,6 @@
+# A method returns the solution at time t + dt from the solution y at time t
+# f represents the problem to solve
+
 def EulerExplicite(t, y, h, f, params):
     return y + h * f(t, y, *params)
 
